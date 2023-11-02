@@ -1,0 +1,25 @@
+{% extends 'base/main.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="glassDiv">
+        <div id="roomname-wrapper">
+            <p>Room Name : <span id="room-name"></span></p>
+        </div>
+        <div id="video-streams">
+        </div>
+    </div>
+    <div id="controls-wrapper"> 
+        <input type="hidden" id="mic-on-src" value="{% static 'imgs/micon.png' %}">
+        <input type="hidden" id="mic-off-src" value="{% static 'imgs/micoff.png' %}">
+        <input type="hidden" id="vid-on-src" value="{% static 'imgs/camon.png' %}">
+        <input type="hidden" id="vid-off-src" value="{% static 'imgs/camoff.png' %}">
+        <img class="control-icons" id="mic" src="{% static 'imgs/micon.png' %}" alt="mic">
+        <img class="control-icons" id="cam" src="{% static 'imgs/camon.png' %}" alt="cam">
+        <img class="control-icons" id="leave" src="{% static 'imgs/leave.png' %}" alt="leave">
+    </div>
+{% endblock content %}

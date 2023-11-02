@@ -1,0 +1,26 @@
+{% extends 'base/main.html' %}
+{% load static %}
+
+{% block content %}
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form id="form">
+            <img src="{% static 'imgs/ohayo_logo.png' %}" alt="logo" id="logo">
+            <h3>Ohayo Minasan!</h3>
+            <label for="username">Enter Room Name</label>
+            <input type="text" placeholder="Eg. ROOM123" name="room" id="room" style="text-transform:uppercase;">
+            <label for="password">Your Display Name</label>
+            <input type="text" placeholder="Eg. Bhupendra Jogi" name="name" id="name">
+            <button type="submit">Chat!</button>
+        </form>
+    <!-- <div class="main">
+        <div id="container">
+            <img src="{% static 'imgs/ohayo_logo.png' %}" alt="logo" id="logo">
+            <h1>Ohayo Minasan!</h1>
+            <p>Let's Chat with anyone and everyone!</p>
+        </div>
+    </div> -->
+
+{% endblock content %}

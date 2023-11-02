@@ -1,0 +1,131 @@
+form{
+    height: 80%;
+    width: 27%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 2% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+form *{
+    color: #ffffff;
+    outline: none;
+    border: none;  
+}
+
+form #logo{
+    height: 24%;
+    width: auto;
+}
+
+form h3{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: -10px;
+    margin-left: -70%;
+}
+input{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-left: -5px;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    transition: all ease-in-out 0.2s;
+}
+input:hover{
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px white;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.background{
+    width: 35%;
+    height: 70%;
+    position: absolute;
+    transform: translate(-45%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+
+/* 
+.main{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    height: 96vh;
+    overflow: hidden;
+    font-family: canopee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    height: 90%;
+    width: 30%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+ */
